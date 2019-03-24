@@ -12,9 +12,17 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.2.5",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-typography": "^2.2.10",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-typography": "^0.16.19",
+    "styled-components": "^4.2.0",
+    "typography": "^0.16.19",
+    "typography-theme-parnassus": "^0.16.19",
+    "typography-theme-st-annes": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
