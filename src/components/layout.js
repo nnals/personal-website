@@ -5,6 +5,8 @@ import c from '../utils/color'
 import Nav from './nav'
 import Header from './header'
 
+const empiricallyProvenBestBreakpoint = 382
+
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${c.backgroundColor};
@@ -31,8 +33,11 @@ Layout.Header = ({ title, subtitle }) => (
   <div
     css={`
       flex: 2;
-      margin-right: 2em;
-      min-width: 382px;
+      min-width: 250px;
+      @media (min-width: ${empiricallyProvenBestBreakpoint}px) {
+        margin-right: 2em;
+        min-width: ${empiricallyProvenBestBreakpoint}px;
+      }
     `}
   >
     <Header>
@@ -44,7 +49,10 @@ Layout.Header = ({ title, subtitle }) => (
 
 Layout.Content = styled.div`
   flex: 4;
-  min-width: 382px;
+  min-width: 250px;
+  @media (min-width: ${empiricallyProvenBestBreakpoint}px) {
+    min-width: ${empiricallyProvenBestBreakpoint}px;
+  }
 `
 
 export default Layout
