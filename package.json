@@ -12,19 +12,29 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "antd": "^3.15.2",
     "babel-plugin-styled-components": "^1.10.0",
+    "chroma-js": "^2.0.3",
     "gatsby": "^2.2.5",
+    "gatsby-plugin-antd": "^2.0.2",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-typography": "^2.2.10",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-typography": "^0.16.19",
     "styled-components": "^4.2.0",
-    "typography": "^0.16.19",
-    "typography-theme-parnassus": "^0.16.19",
-    "typography-theme-st-annes": "^0.16.19"
+    "typography": "^0.16.19"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-plugin-flowtype": "^2.50.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4"
   },
   "repository": {

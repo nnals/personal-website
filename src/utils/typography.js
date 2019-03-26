@@ -1,16 +1,17 @@
 import Typography from 'typography'
-import parnassusTheme from 'typography-theme-parnassus'
 
-parnassusTheme.overrideThemeStyles = ({ rhythm }, options) => ({
-  'h2,h3': {
-    marginTop: rhythm(1),
-    marginBottom: rhythm(0.8),
-  },
-  ul: {
-    lineHeight: '.8em',
-  },
+const typography = new Typography({
+  googleFonts: [
+    { name: 'Roboto Slab', styles: ['700, 700i'] },
+    { name: 'Source Sans Pro', styles: ['700, 400, 400i'] },
+  ],
+  headerFontFamily: ['Roboto Slab', 'serif'],
+  bodyFontFamily: ['Source Sans Pro', 'sans-serif'],
+  baseFontSize: '19px',
+  scaleRatio: 2,
+  overrideStyles: ({ rhythm }, options) => ({
+    ul: { lineHeight: rhythm(0.6) },
+  }),
 })
-
-const typography = new Typography(parnassusTheme)
 
 export default typography

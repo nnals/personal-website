@@ -1,25 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
+import c from '../utils/color'
+import Nav from './nav'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: hsl(195, 50%, 99%);
+    background-color: ${c.backgroundColor};
   }
 `
 
 const Main = styled.main`
   margin: 0px auto;
-  max-width: 550px;
-  padding: 64px 16px 48px 16px;
-  height: 100vh;
+  max-width: 570px;
+  padding: 8vh 5vw 6vh 5vw;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
 `
 
 export default ({ children }) => (
-  <>
+  <div>
     <GlobalStyle />
+    <Nav />
     <Main>{children}</Main>
-  </>
+  </div>
 )

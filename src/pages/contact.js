@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Header from '../components/header'
 
 export default () => (
   <Layout>
-    <h1>Contact</h1>
+    <Header>
+      <Header.Title>Contact</Header.Title>
+    </Header>
     <p>If you need help with a project feel free to send me a message.</p>
     <form />
-    <Link to="/">Back to home</Link>
   </Layout>
 )
