@@ -6,6 +6,7 @@ const boxShadow = alpha => `0px 5px 42px -10px hsla(0,0%,0%,${alpha})`
 const Box = styled.div`
   padding: 0.3em 0.5em 0.3em 0.5em;
   box-shadow: ${({ elevation = 0 }) => boxShadow(elevation)};
+  border-radius: 2px;
 `
 
 export default Box

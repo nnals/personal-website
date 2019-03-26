@@ -8,7 +8,7 @@ import chroma from 'chroma-js'
 const SkillBox = styled(Box).attrs({ elevation: 0.1 })`
   background: linear-gradient(
     270deg,
-    ${c.titleGradientColors.map(x => chroma(x).alpha(0.03)).join(', ')}
+    ${c.titleGradientColors.map(x => chroma(x).alpha(0.05)).join(', ')}
   );
   // background-size: 400% 400%;
   // background-position: 0% 50%;
@@ -17,7 +17,7 @@ const SkillBox = styled(Box).attrs({ elevation: 0.1 })`
 const SkillSection = ({ title, skills }) => (
   <div
     css={`
-      margin: 0 1em 1.8em 1em;
+      margin: 0 2em 1.8em 0;
       width: 238px;
     `}
   >

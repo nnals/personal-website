@@ -4,7 +4,7 @@ import c from '../utils/color'
 import Box from './box'
 
 const Header = styled.header`
-  display: flex; // FIX: this sets height to 0 on chrome => currently "fixed" using min-height
+  display: flex;
   flex-direction: column;
   align-items: start;
 `
