@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 import c from '../utils/color'
 import Nav from './nav'
+import Header from './header'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,17 +13,38 @@ const GlobalStyle = createGlobalStyle`
 
 const Main = styled.main`
   margin: 0px auto;
-  max-width: 570px;
   padding: 8vh 5vw 6vh 5vw;
-  // height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 `
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <div>
     <GlobalStyle />
     <Nav />
     <Main>{children}</Main>
   </div>
 )
+
+Layout.Header = ({ title, subtitle }) => (
+  <div
+    css={`
+      flex: 2;
+      margin-right: 2em;
+      min-width: 382px;
+    `}
+  >
+    <Header>
+      <Header.Title>{title}</Header.Title>
+      <Header.Subtitle>{subtitle}</Header.Subtitle>
+    </Header>
+  </div>
+)
+
+Layout.Content = styled.div`
+  flex: 4;
+  min-width: 382px;
+`
+
+export default Layout

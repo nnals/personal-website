@@ -10,7 +10,7 @@ const typography = new Typography({
   baseFontSize: '19px',
   scaleRatio: 2,
   overrideStyles: ({ rhythm }, options) => ({
-    ul: { lineHeight: rhythm(0.6) },
+    li: { marginBottom: '0.4em' },
   }),
 })
 

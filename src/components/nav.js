@@ -1,7 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
 import c from '../utils/color'
 import typography from '../utils/typography'
+import Box from './box'
+
+const LogoBox = styled(Box)`
+  font-size: 0.8em;
+  font-family: ${typography.options.headerFontFamily.join(', ')};
+  background-color: ${c.logoColor};
+  &:hover {
+    background-color: ${c.logoColorHover};
+  }
+`
 
 const Logo = () => (
   <Link
@@ -10,17 +21,7 @@ const Logo = () => (
       text-decoration: none;
     `}
   >
-    <div
-      css={`
-        font-size: 0.8em;
-        font-family: ${typography.options.headerFontFamily.join(', ')};
-        padding: 0.3em 0.5em 0.3em 0.5em;
-        background-color: ${c.logoColor};
-        &:hover {
-          background-color: ${c.logoColorHover};
-        }
-      `}
-    >
+    <LogoBox>
       <div
         css={`
           color: ${c.backgroundColor};
@@ -29,7 +30,7 @@ const Logo = () => (
       >
         Nicolai Benker
       </div>
-    </div>
+    </LogoBox>
   </Link>
 )
 
