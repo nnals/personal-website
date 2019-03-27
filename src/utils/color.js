@@ -17,7 +17,9 @@ export default {
   logoColorHover: chroma.hsl(primaryHue, 0.1, 0.2),
   titleGradientColors: ['#6144eb', '#24e7f6'],
   subtitleColor: chroma.hsl(primaryHue, 0.1, 0.8),
-  navItemColor: chroma.hsl(primaryHue, 0.1, 0.5),
-  navItemColorActive: chroma.hsl(primaryHue, 0.4, 0.5),
+  navItemColor: chroma.hsl(primaryHue, 0.1, 0.6),
+  navItemColorHover: chroma.hsl(primaryHue, 0.3, 0.6),
+  navItemColorActive: chroma.hsl(primaryHue, 0.3, 0.6),
   headingColor: chroma.hsl(primaryHue, 0.1, 0.4),
+  bodyColor: chroma.hsl(primaryHue, 0, 0.4),
 }

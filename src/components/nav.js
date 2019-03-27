@@ -9,6 +9,7 @@ const LogoBox = styled(Box)`
   font-size: 0.8em;
   font-family: ${typography.options.headerFontFamily.join(', ')};
   background-color: ${c.logoColor};
+  transition: all 400ms ease-out;
   &:hover {
     background-color: ${c.logoColorHover};
   }
@@ -45,11 +46,17 @@ const underlineCSS = color => `{
 const NavItem = props => (
   <Link
     css={`
-      margin: 0 8px 0 8px;
+      margin: 0 0 0 16px;
+      font-size: 0.85em;
+      font-weight: 600;
       text-decoration: none;
       color: ${c.navItemColor};
+      transition: all 200ms ease;
+      &:hover{
+        color: ${c.navItemColorHover};
+      }
       &::after ${underlineCSS(c.backgroundColor)}
-      &:hover::after ${underlineCSS(c.navItemColor)}
+      &:hover::after ${underlineCSS(c.navItemColorHover)}
     `}
     activeStyle={{
       color: c.navItemColorActive,
@@ -72,9 +79,9 @@ const Nav = () => (
         display: flex;
       `}
     >
-      <NavItem to="/work">work</NavItem>
-      <NavItem to="/skills">skills</NavItem>
-      <NavItem to="/contact">contact</NavItem>
+      <NavItem to="/work">WORK</NavItem>
+      <NavItem to="/skills">SKILLS</NavItem>
+      <NavItem to="/contact">CONTACT</NavItem>
     </div>
   </div>
 )
