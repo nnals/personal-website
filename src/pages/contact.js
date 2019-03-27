@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
+import c from '../utils/color'
+import Box, { HoverBox } from '../components/box'
 
 // TODO aria?
 const Input = styled.input`
@@ -33,6 +35,22 @@ const TextArea = styled.textarea`
   outline: currentcolor none 0px;
   width: 100%;
   transition: all 200ms ease 0s;
+  min-height: 180px;
+`
+
+const Button = styled(HoverBox).attrs({
+  variant: 'square',
+  gradientAlpha: 0.8,
+  gradientAlphaHover: 1,
+  elevation: 0.25,
+  elevationHover: 0.6,
+})`
+  color: ${c.backgroundColor};
+  font-weight: bold;
+  padding: 0.4em;
+  width: 150px;
+  letter-spacing: 0.14em;
+  border: none;
 `
 
 export default () => (
@@ -50,6 +68,9 @@ export default () => (
         <Input placeholder="Name" />
         <Input placeholder="Phone" />
         <TextArea placeholder="What can I do for you?" />
+        <Button as="button" type="submit">
+          SEND
+        </Button>
       </form>
     </Layout.Content>
   </Layout>

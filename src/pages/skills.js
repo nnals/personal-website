@@ -5,13 +5,12 @@ import Box from '../components/box'
 import c from '../utils/color'
 import chroma from 'chroma-js'
 
-const SkillBox = styled(Box).attrs({ elevation: 0.15 })`
+const SkillBox = styled(Box).attrs({
+  elevation: 0.15,
+  variant: 'round',
+  gradientAlpha: 0.02,
+})`
   flex: 1;
-  background: linear-gradient(
-    270deg,
-    ${c.titleGradientColors.map(x => chroma(x).alpha(0.02)).join(', ')}
-  );
-  border-radius: 5px;
 `
 
 const SkillSection = ({ title, skills }) => (

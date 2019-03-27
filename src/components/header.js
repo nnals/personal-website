@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import c from '../utils/color'
 import Box from './box'
 
@@ -9,17 +9,12 @@ const Header = styled.header`
   align-items: start;
 `
 
-const changeColor = keyframes`
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
-`
-
-const TitleBox = styled(Box).attrs({ elevation: 0.8 })`
-  background: linear-gradient(270deg, ${c.titleGradientColors.join(', ')});
-  background-size: 400% 400%;
+const TitleBox = styled(Box).attrs({
+  elevation: 0.8,
+  gradientAlpha: 1,
+  animated: true,
+})`
   margin-bottom: 0.3em;
-  animation: ${changeColor} 20s ease infinite;
 `
 
 Header.Title = ({ children }) => (
