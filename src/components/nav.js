@@ -14,7 +14,7 @@ const LogoBox = styled(Box)`
   }
 `
 
-const Logo = () => (
+const Logo = ({ variant }) => (
   <Link
     to="/"
     css={`
@@ -28,7 +28,7 @@ const Logo = () => (
           margin: 0;
         `}
       >
-        Nicolai Benker
+        {variant === 'small' ? `NB` : `Nicolai Benker`}
       </div>
     </LogoBox>
   </Link>
@@ -36,7 +36,7 @@ const Logo = () => (
 
 const underlineCSS = color => `{
   content: '';
-  height: 3px;
+  height: 2px;
   background: ${color};
   display: block;
   margin-top: -1px;

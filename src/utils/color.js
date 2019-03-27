@@ -12,7 +12,6 @@ const getSecondaryColor = getColor(secondaryHue)
 export { getPrimaryColor, getSecondaryColor }
 
 export default {
-  // backgroundColor: chroma.hsl(primaryHue, 0.5, 0.99),
   backgroundColor: chroma.hsl(primaryHue, 0.5, 0.99),
   logoColor: chroma.hsl(primaryHue, 0.1, 0.5),
   logoColorHover: chroma.hsl(primaryHue, 0.1, 0.2),
@@ -20,4 +19,5 @@ export default {
   subtitleColor: chroma.hsl(primaryHue, 0.1, 0.8),
   navItemColor: chroma.hsl(primaryHue, 0.1, 0.5),
   navItemColorActive: chroma.hsl(primaryHue, 0.4, 0.5),
+  headingColor: chroma.hsl(primaryHue, 0.1, 0.4),
 }

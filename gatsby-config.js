@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Nicolai Benker – Software engineer',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-antd',
     {
       resolve: `gatsby-plugin-typography`,
       options: {

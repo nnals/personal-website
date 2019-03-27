@@ -21,7 +21,7 @@ export default () => (
           <Link to="/contact">here</Link>.
         </p>
       </div>
-      <p>
+      <p css="font-size: .8em">
         <SupStar /> Not that people's whereabouts would really matter nowadays.
       </p>
     </Layout.Content>

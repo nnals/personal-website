@@ -1,4 +1,5 @@
 import Typography from 'typography'
+import c from './color'
 
 /*
 TODO breakpoint scaling of headings
@@ -33,6 +34,7 @@ const typography = new Typography({
   bodyFontFamily: ['Source Sans Pro', 'sans-serif'],
   baseFontSize: '19px',
   scaleRatio: 2,
+  headerColor: c.headingColor.hex(),
   overrideStyles: (vr, options) => {
     return {
       li: { marginBottom: '0.4em' },

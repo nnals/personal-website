@@ -5,13 +5,13 @@ import Box from '../components/box'
 import c from '../utils/color'
 import chroma from 'chroma-js'
 
-const SkillBox = styled(Box).attrs({ elevation: 0.1 })`
+const SkillBox = styled(Box).attrs({ elevation: 0.2 })`
+  flex: 1;
   background: linear-gradient(
     270deg,
     ${c.titleGradientColors.map(x => chroma(x).alpha(0.05)).join(', ')}
   );
-  // background-size: 400% 400%;
-  // background-position: 0% 50%;
+  border-radius: 5px;
 `
 
 const SkillSection = ({ title, skills }) => (
@@ -19,6 +19,8 @@ const SkillSection = ({ title, skills }) => (
     css={`
       margin: 0 2em 1.8em 0;
       width: 238px;
+      display: flex;
+      flex-direction: column;
     `}
   >
     <h2>{title}</h2>
@@ -54,6 +56,7 @@ export default () => (
             'Java',
             'C#',
             'DB: SQL, MongoDB',
+            'Python',
             'PHP',
             'C',
             'Haskell',
@@ -62,10 +65,11 @@ export default () => (
         <SkillSection
           title="Frameworks"
           skills={[
-            'JS: React, Angular/AngularJS',
+            'JS: React, React Native/Expo, Angular/AngularJS',
             'Node.js: Express',
             'Java: Spring (WebFlux)',
             'CSS: SemanticUI, Material, Bootstrap',
+            'Python: Django',
           ]}
         />
         <SkillSection
@@ -73,10 +77,11 @@ export default () => (
           skills={[
             'Node.js',
             'NPM/Yarn',
+            'Lerna',
             'Docker/Docker Compose',
             'Git',
             'AWS',
-            'now',
+            'Now',
           ]}
         />
       </div>
