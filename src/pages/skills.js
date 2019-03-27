@@ -8,7 +8,7 @@ import chroma from 'chroma-js'
 const SkillBox = styled(Box).attrs({
   elevation: 0.15,
   variant: 'round',
-  gradientAlpha: 0.02,
+  gradientAlpha: 0.015,
 })`
   flex: 1;
 `
