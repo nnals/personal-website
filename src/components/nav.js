@@ -70,6 +70,7 @@ const Nav = () => (
     css={`
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 5vh 5vw 5vh 5vw;
     `}
   >
