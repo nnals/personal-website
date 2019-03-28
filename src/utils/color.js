@@ -9,9 +9,7 @@ const getColor = hue => (lightness, saturation, alpha) =>
 const getPrimaryColor = getColor(primaryHue)
 const getSecondaryColor = getColor(secondaryHue)
 
-export { getPrimaryColor, getSecondaryColor }
-
-export default {
+const colors = {
   backgroundColor: chroma.hsl(primaryHue, 0.5, 0.99),
   logoColor: chroma.hsl(primaryHue, 0.1, 0.5),
   logoColorHover: chroma.hsl(primaryHue, 0.1, 0.2),
@@ -22,4 +20,10 @@ export default {
   navItemColorActive: chroma.hsl(primaryHue, 0.3, 0.6),
   headingColor: chroma.hsl(primaryHue, 0.1, 0.4),
   bodyColor: chroma.hsl(primaryHue, 0, 0.4),
+  inputBorderColor: chroma.hsl(primaryHue, 0.2, 0.9),
+  inputBorderColorHover: chroma.hsl(primaryHue, 0.2, 0.75),
 }
+
+export { getPrimaryColor, getSecondaryColor }
+
+export default colors

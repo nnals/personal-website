@@ -2,39 +2,26 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import c from '../utils/color'
-import Box, { HoverBox } from '../components/box'
+import { HoverBox } from '../components/box'
 
 // TODO aria?
 const Input = styled.input`
   &:focus {
-    border-bottom: 1px solid rgb(140, 149, 161);
+    border-bottom: 1px solid ${c.inputBorderColorHover};
   }
-  margin: 0px 0px 2rem;
-  border-color: currentcolor currentcolor rgb(221, 229, 232);
+  margin: 0 0 2rem;
   border-style: none none solid none;
+  border-bottom-color: ${c.inputBorderColor};
   border-bottom-width: 1px;
-  padding: 0.5rem 0px;
+  padding: 0.5rem 0;
   background: transparent none repeat scroll 0% 0%;
-  outline: currentcolor none 0px;
+  outline: currentcolor none 0;
   width: 100%;
   transition: all 200ms ease 0s;
 `
 
 // TODO aria?
-const TextArea = styled.textarea`
-  margin: 0px 0px 2rem;
-  border-color: currentcolor currentcolor rgb(221, 229, 232);
-  border-bottom-color: rgb(221, 229, 232);
-  border-style: none none solid;
-  border-bottom-style: solid;
-  border-width: 0px 0px 1px;
-  border-bottom-width: 1px;
-  padding: 0.5rem 0px;
-  background: transparent none repeat scroll 0% 0%;
-  border-radius: 0px;
-  outline: currentcolor none 0px;
-  width: 100%;
-  transition: all 200ms ease 0s;
+const TextArea = styled(Input).attrs({ as: 'textarea' })`
   min-height: 180px;
 `
 
