@@ -4,12 +4,11 @@ import Layout from '../components/layout'
 import c from '../utils/color'
 import { HoverBox } from '../components/box'
 
-// TODO aria?
 const Input = styled.input`
   &:focus {
     border-bottom: 1px solid ${c.inputBorderColorHover};
   }
-  margin: 0 0 2rem;
+  margin: 0 0 1em;
   border-style: none none solid none;
   border-bottom-color: ${c.inputBorderColor};
   border-bottom-width: 1px;
@@ -20,9 +19,8 @@ const Input = styled.input`
   transition: all 200ms ease 0s;
 `
 
-// TODO aria?
 const TextArea = styled(Input).attrs({ as: 'textarea' })`
-  min-height: 180px;
+  min-height: 160px;
 `
 
 const Button = styled(HoverBox).attrs({
@@ -51,10 +49,19 @@ export default () => (
       >
         If you need help with a project feel free to send me a message.
       </p>
-      <form>
-        <Input placeholder="Name" />
-        <Input placeholder="Phone" />
-        <TextArea placeholder="What can I do for you?" />
+      <form name="contact" method="POST" data-netlify="true">
+        <label>
+          Name
+          <Input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <Input type="email" name="email" required />
+        </label>
+        <label>
+          What can I do for you?
+          <TextArea name="message" required />
+        </label>
         <Button as="button" type="submit">
           SEND
         </Button>
