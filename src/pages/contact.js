@@ -49,7 +49,15 @@ export default () => (
       >
         If you need help with a project feel free to send me a message.
       </p>
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <label css="display: none;">
+          Don’t fill this out if you‘re human: <input name="bot-field" />
+        </label>
         <label>
           Name
           <Input type="text" name="name" required />
