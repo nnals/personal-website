@@ -9,7 +9,9 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "lint": "eslint",
+    "lint:all": "eslint src/**/*.js"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -26,10 +28,13 @@
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-react-app": "^3.0.8",
+    "eslint-plugin-babel": "^5.2.1",
     "eslint-plugin-flowtype": "^2.50.3",
     "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
