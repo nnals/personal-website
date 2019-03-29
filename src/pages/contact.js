@@ -17,6 +17,9 @@ const Input = styled.input`
   outline: currentcolor none 0;
   width: 100%;
   transition: all 200ms ease 0s;
+  &:invalid {
+    box-shadow: none;
+  }
 `
 
 const TextArea = styled(Input).attrs({ as: 'textarea' })`
@@ -54,13 +57,14 @@ export default () => (
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
+        action="/thanks"
       >
         <label css="display: none;">
           Don’t fill this out if you‘re human: <input name="bot-field" />
         </label>
         <label>
           Name
-          <Input type="text" name="name" required />
+          <Input type="text" name="name" placeholder="" required />
         </label>
         <label>
           Email
