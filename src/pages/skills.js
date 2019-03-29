@@ -1,9 +1,7 @@
 import React from 'react'
+import Box from '../components/box'
 import styled from 'styled-components'
 import Layout from '../components/layout'
-import Box from '../components/box'
-import c from '../utils/color'
-import chroma from 'chroma-js'
 
 const SkillBox = styled(Box).attrs({
   elevation: 0.15,
@@ -58,7 +56,7 @@ export default () => (
             'Python',
             'PHP',
             'C',
-            'Haskell',
+            'OpenAPI/Swagger',
           ]}
         />
         <SkillSection
@@ -79,6 +77,7 @@ export default () => (
             'Lerna',
             'Docker/Docker Compose',
             'Git',
+            'Gatsby',
             'AWS',
             'Now',
           ]}
