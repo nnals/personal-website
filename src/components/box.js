@@ -1,8 +1,7 @@
 import styled, { keyframes, css } from 'styled-components'
-import c from '../utils/color'
 import chroma from 'chroma-js'
+import c from '../utils/color'
 
-// const boxShadow = `0px 10px 10px -5px hsla(0, 0%, 0%, 0.2)`
 const boxShadow = alpha => `0px 5px 42px -10px hsla(0,0%,0%,${alpha})`
 
 const linearGradient = gradientAlpha => `linear-gradient(
