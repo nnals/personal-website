@@ -39,6 +39,7 @@ const Button = styled(HoverBox).attrs({
   width: 150px;
   letter-spacing: 0.14em;
   border: none;
+  margin-top: 0.4em;
 `
 
 export default () => (

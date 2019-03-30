@@ -1,6 +1,6 @@
 import React from 'react'
-import Box from '../components/box'
 import styled from 'styled-components'
+import Box from '../components/box'
 import Layout from '../components/layout'
 
 const SkillBox = styled(Box).attrs({
@@ -12,7 +12,7 @@ const SkillBox = styled(Box).attrs({
 `
 
 const SkillSection = ({ title, skills }) => (
-  <div
+  <section
     css={`
       margin: 0 2em 1.8em 0;
       width: 238px;
@@ -33,7 +33,7 @@ const SkillSection = ({ title, skills }) => (
         ))}
       </ul>
     </SkillBox>
-  </div>
+  </section>
 )
 
 export default () => (
@@ -72,11 +72,11 @@ export default () => (
         <SkillSection
           title="Platforms / Tools"
           skills={[
-            'Node.js',
-            'NPM/Yarn',
+            'Node.js/NPM/Yarn',
             'Lerna',
             'Docker/Docker Compose',
             'Git',
+            'Stripe (Connect)',
             'Gatsby',
             'AWS',
             'Now',
