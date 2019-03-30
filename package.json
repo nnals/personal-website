@@ -18,6 +18,7 @@
     "chroma-js": "^2.0.3",
     "gatsby": "^2.2.5",
     "gatsby-plugin-google-analytics": "^2.0.18",
+    "gatsby-plugin-manifest": "^2.0.26",
     "gatsby-plugin-react-helmet": "^3.0.11",
     "gatsby-plugin-robots-txt": "^1.4.0",
     "gatsby-plugin-sitemap": "^2.0.11",

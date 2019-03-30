@@ -55,5 +55,18 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Nicolai Benker · Software Engineer`,
+        short_name: `Nicolai Benker`,
+        start_url: `/`,
+        background_color: `#fbfbfe`,
+        theme_color: `#2e2f38`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        include_favicon: true,
+      },
+    },
   ],
 }
