@@ -19,11 +19,26 @@ module.exports = {
         trackingId: 'UA-98653590-2',
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-sitemap`,
-    //   options: {
-    //     exclude: ['/thanks'],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ['/thanks'],
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl: url
+            }
+          }
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+      }`,
+      },
+    },
   ],
 }
