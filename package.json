@@ -23,6 +23,7 @@
     "gatsby-plugin-sitemap": "^2.0.11",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-typography": "^2.2.10",
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
@@ -44,8 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
-    "prettier": "^1.16.4",
-    "prop-types": "^15.7.2"
+    "prettier": "^1.16.4"
   },
   "repository": {
     "type": "git",
