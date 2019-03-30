@@ -1,18 +1,18 @@
 const {
   NODE_ENV,
-  // URL: NETLIFY_SITE_URL = 'https://nbenker.io',
-  // DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  URL: NETLIFY_SITE_URL = 'https://nbenker.io',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env
-// const isNetlifyProduction = NETLIFY_ENV === 'production'
-// const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
+const isNetlifyProduction = NETLIFY_ENV === 'production'
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
     title: 'Portfolio',
     titleTemplate: '%s · Nicolai Benker',
     description: 'Vienna based software engineer available for freelance work.',
-    siteUrl: 'https://nbenker.io',
+    siteUrl,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
