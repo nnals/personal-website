@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import c from '../utils/color'
 import { HoverBox } from '../components/box'
+import SEO from '../components/SEO'
 
 const Input = styled.input`
   &:focus {
@@ -44,6 +45,7 @@ const Button = styled(HoverBox).attrs({
 
 export default () => (
   <Layout>
+    <SEO pathname="/contact" title="Contact" />
     <Layout.Header title="How to contact me" />
     <Layout.Content>
       <p

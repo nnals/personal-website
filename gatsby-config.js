@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Nicolai Benker – Software engineer',
+    title: 'Portfolio',
+    titleTemplate: '%s · Nicolai Benker',
+    description: 'Vienna based software engineer available for freelance work.',
+    url: 'https://nbenker.io',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -16,5 +19,11 @@ module.exports = {
         trackingId: 'UA-98653590-2',
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-sitemap`,
+    //   options: {
+    //     exclude: ['/thanks'],
+    //   },
+    // },
   ],
 }

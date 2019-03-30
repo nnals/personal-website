@@ -4,6 +4,7 @@ import { FiCode } from 'react-icons/fi'
 import Layout from '../components/layout'
 import c from '../utils/color'
 import Box from '../components/box'
+import SEO from '../components/SEO'
 
 const JobSection = ({ title, period, children }) => (
   <section css="margin-bottom: 1.45em">
@@ -48,6 +49,7 @@ const Project = ({ title, description, tasks, technologies }) => (
 
 export default () => (
   <Layout>
+    <SEO pathname="/work" title="Work" />
     <Layout.Header title="What I'v been up to" />
     <Layout.Content>
       <p css="font-size: 1.2em;">

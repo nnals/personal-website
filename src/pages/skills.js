@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Box from '../components/box'
 import Layout from '../components/layout'
+import SEO from '../components/SEO'
 
 const SkillBox = styled(Box).attrs({
   elevation: 0.15,
@@ -29,7 +30,7 @@ const SkillSection = ({ title, skills }) => (
         `}
       >
         {skills.map((x, i) => (
-          <li key={i}>{x}</li>
+          <li key={x}>{x}</li>
         ))}
       </ul>
     </SkillBox>
@@ -38,6 +39,7 @@ const SkillSection = ({ title, skills }) => (
 
 export default () => (
   <Layout>
+    <SEO pathname="/skills" title="Skills" />
     <Layout.Header title="What I know" />
     <Layout.Content>
       <div

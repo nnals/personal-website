@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/SEO'
 
 const SupStar = () => <sup css="vertical-align: sub;">*</sup>
 
 export default () => (
   <Layout>
+    <SEO pathname="/" title="Home" />
     <Layout.Header title="Nicolai Benker" subtitle="Software engineer" />
     <Layout.Content>
       <div css="font-size: 1.2em">
