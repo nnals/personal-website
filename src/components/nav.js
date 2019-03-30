@@ -83,6 +83,7 @@ const Nav = () => (
       <NavItem to="/work">WORK</NavItem>
       <NavItem to="/skills">SKILLS</NavItem>
       <NavItem to="/contact">CONTACT</NavItem>
+      <NavItem to="/legal-notice">LEGAL NOTICE</NavItem>
     </div>
   </div>
 )
