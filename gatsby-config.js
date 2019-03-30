@@ -59,7 +59,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Nicolai Benker · Software Engineer`,
-        short_name: `Nicolai Benker`,
+        short_name: `nbenker.io`,
         start_url: `/`,
         background_color: `#fbfbfe`,
         theme_color: `#2e2f38`,

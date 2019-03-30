@@ -19,6 +19,7 @@ const colors = {
   navItemColorHover: chroma.hsl(primaryHue, 0.3, 0.5),
   navItemColorActive: chroma.hsl(primaryHue, 0.3, 0.5),
   headingColor: chroma.hsl(primaryHue, 0.1, 0.4),
+  iconColor: chroma.hsl(primaryHue, 0.1, 0.5),
   bodyColor: chroma.hsl(primaryHue, 0, 0.4),
   bodyColorPale: chroma.hsl(primaryHue, 0, 0.6),
   inputBorderColor: chroma.hsl(primaryHue, 0.2, 0.9),

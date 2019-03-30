@@ -18,8 +18,10 @@ export default () => (
           Lately I have been mostly focusing on full stack web development.
         </p>
         <p>
-          I‘m available for freelance work. You can contact me{' '}
-          <Link to="/contact">here</Link>.
+          I‘m available for freelance work –
+          <br />
+          And I‘d love to hear about your project, so please{' '}
+          <Link to="/contact">get in touch</Link>.
         </p>
       </div>
       <p css="font-size: .8em">

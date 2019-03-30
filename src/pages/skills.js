@@ -53,6 +53,7 @@ export default () => (
           skills={[
             'JavaScript',
             'Java',
+            'Kotlin',
             'C#',
             'DB: SQL, MongoDB',
             'Python',
@@ -68,6 +69,7 @@ export default () => (
             'Node.js: Express',
             'Java: Spring (WebFlux)',
             'CSS: SemanticUI, Material, Bootstrap',
+            'C#: Nancy, NServiceKit, ORMLite',
             'Python: Django',
           ]}
         />
