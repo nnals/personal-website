@@ -10,7 +10,7 @@ import Box from '../components/box'
 import SEO from '../components/SEO'
 
 const JobSection = ({ title, period, intro, children }) => (
-  <section css="margin-bottom: 2.4em">
+  <section css="margin-top: 2.6em">
     <header
       css={`
         margin-bottom: ${intro ? '0.6em' : '1.45em'};
@@ -60,20 +60,24 @@ const iconCSS = `
   margin-top: -.15em
 `
 
+const ProjectParagraph = styled.p`
+  font-size: 0.95em;
+`
+
 const Project = ({ title, description, tasks, technologies }) => (
   <ProjectBox>
     <ProjectTitle>{title}</ProjectTitle>
-    <p>{description}</p>
+    <ProjectParagraph>{description}</ProjectParagraph>
     <ProjectSubtitle>
       <IconTasks css={iconCSS} />
       Tasks
     </ProjectSubtitle>
-    <p>{tasks}</p>
+    <ProjectParagraph>{tasks}</ProjectParagraph>
     <ProjectSubtitle>
       <IconTechnologies css={iconCSS} />
       Technologies
     </ProjectSubtitle>
-    <p css="margin-bottom: 0;">{technologies}</p>
+    <ProjectParagraph css="margin-bottom: 0;">{technologies}</ProjectParagraph>
   </ProjectBox>
 )
 
@@ -125,9 +129,9 @@ export default () => (
         />
         <Project
           title="Media Box"
-          description="Blabla for Media Carrier GmbH ..."
+          description="Media Carrier GmbH's main product is a digital media library called Media Box consisting of magazines and newspapers. It can be integrated into existing business workflows of the company's B2B customer (primarily hotels and airlines like Lufthansa)."
           tasks="Development of modules for distributed web backends and Single Page Applications, rewrite of PHP legacy code to AngularJS"
-          technologies="C#, Nancy, PHP, AngularJS, Bootstrap, Docker, AWS"
+          technologies="C#, Nancy, PHP, AngularJS, Bootstrap, Docker, AWS Cloudfront & S3"
         />
       </JobSection>
 
