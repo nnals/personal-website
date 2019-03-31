@@ -56,8 +56,8 @@ const ProjectSubtitle = styled.h4`
 const iconCSS = `
   margin-right: .45em;
   color: ${c.iconColor}
-  font-size: 1.25em;
-  margin-top: -.18em
+  font-size: 1.2em;
+  margin-top: -.15em
 `
 
 const Project = ({ title, description, tasks, technologies }) => (
@@ -86,20 +86,28 @@ export default () => (
         Below you will find the companies I have worked for and a selection of
         projects I helped realize during that period.
       </p>
+
       <JobSection title="Freelancing" period="2017 – today">
         <Project
           title="Fashion Marketplace"
           description="Blabla for startup, early phase ..."
           tasks="From requirements engineering over software architecture to implementation"
-          technologies="MongoDB, Kotlin, Spring Boot Webflux, React, MaterialUI, Stripe Connect"
+          technologies="MongoDB, Kotlin, Spring Boot Webflux, React, MaterialUI, Stripe Connect, Firebase Auth"
         />
         <Project
           title="Lorem Ipsum"
           description="Blabla for Helfende Hände ... automation of tedious business processes ..."
           tasks="Optimization of business processes, ..."
-          technologies="MSSQL, Sequelize, Express, React, SemanticUI, Lerna, Jest"
+          technologies="MSSQL, Sequelize, Express, React, SemanticUI, Lerna, Jest, Docker, Docker Compose"
+        />
+        <Project
+          title="This website"
+          description="For this website Gatsby was chosen for it's well-thought-out design. This provides us with code splitting, link prefetching and many more aspects leading to a highly performant site."
+          tasks="UI Design, Development, SEO optimization"
+          technologies="React, Gatsby, styled-components, Typography.js, Netlify CD"
         />
       </JobSection>
+
       <JobSection
         title="iXTS GmbH"
         period="2014 – 2017"
@@ -123,8 +131,17 @@ export default () => (
         />
       </JobSection>
 
-      <JobSection title="Sistecs Media Agentur" period="2013 – 2016">
-        <p>A full service agency in Erding, Germany</p>
+      <JobSection
+        title="Sistecs Media Agentur"
+        period="2013 – 2019"
+        intro="A full service agency in Erding, Germany"
+      >
+        <Project
+          title="Artist management app"
+          description="To complement an existing web application used by music managers to deal with all organizational and legal business processes, an iOS and Android app for the musicians was developed. The app gives them detailed information about all their events, notifies of messages received from the manager and keeps them up to date on the status of each event. It furthermore allows them to reply to booking inquiries, requests to send legal documents etc."
+          tasks="Leading the development, architectural decisions, UI/UX design and deployment to app stores"
+          technologies="MySQL, PHP, JWT auth, React Native, Expo"
+        />
       </JobSection>
     </Layout.Content>
   </Layout>

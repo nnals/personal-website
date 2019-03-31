@@ -67,7 +67,7 @@ export default () => (
           skills={[
             'JS: React, React Native/Expo, Angular/AngularJS',
             'Node.js: Express',
-            'Java: Spring (WebFlux)',
+            'Java: Spring (WebFlux), JavaFX',
             'CSS: SemanticUI, Material, Bootstrap',
             'C#: Nancy, NServiceKit, ORMLite',
             'Python: Django',
@@ -84,6 +84,7 @@ export default () => (
             'Gatsby',
             'AWS',
             'Now',
+            'Firebase Auth',
           ]}
         />
       </div>
