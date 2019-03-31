@@ -65,15 +65,17 @@ const NavItem = props => (
   />
 )
 
+const NavCointainer = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 5vw 5vh 5vw;
+  margin: 0px auto;
+  max-width: 1440px;
+`
+
 const Nav = () => (
-  <div
-    css={`
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5vh 5vw 5vh 5vw;
-    `}
-  >
+  <NavCointainer>
     <Logo />
     <div
       css={`
@@ -85,7 +87,7 @@ const Nav = () => (
       <NavItem to="/contact">CONTACT</NavItem>
       <NavItem to="/legal-notice">LEGAL NOTICE</NavItem>
     </div>
-  </div>
+  </NavCointainer>
 )
 
 export default Nav

@@ -16,7 +16,8 @@ export default () => (
           Hello, I‘m a software engineer based in Vienna, Austria.
           <SupStar />
           <br />
-          Lately I have been mostly focusing on full stack web development.
+          Lately I have been mostly focusing on full stack web development but
+          you can <Link to="/work">see for yourself</Link>.
         </p>
         <p>
           I‘m available for freelance work –
