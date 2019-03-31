@@ -22,15 +22,31 @@ const Logo = ({ variant }) => (
       text-decoration: none;
     `}
   >
-    <LogoBox>
-      <div
+    <LogoBox
+      css={`
+        color: ${c.backgroundColor};
+        margin: 0;
+      `}
+    >
+      {/* <div
         css={`
-          color: ${c.backgroundColor};
-          margin: 0;
+          padding: 0 0.17em;
+          @media (min-width: 501px) {
+            display: none;
+          }
         `}
       >
-        {variant === 'small' ? `NB` : `Nicolai Benker`}
+        N
       </div>
+      <div
+        css={`
+          @media (max-width: 500px) {
+            display: none;
+          }
+        `}
+      > */}
+      Nicolai Benker
+      {/* </div> */}
     </LogoBox>
   </Link>
 )
