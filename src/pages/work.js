@@ -90,9 +90,9 @@ export default () => (
       <JobSection title="Freelancing" period="2017 – today">
         <Project
           title="Fashion Marketplace"
-          description="Blabla for startup, early phase ..."
+          description="For a startup in its early phase we developed a marketplace connecting customers and fashion designers. Among many other things it allows Designers to easily manage their offered products, their received orders, gain insights into sales statistics and being paid out automatically on a regular basis. Customers are able to purchase goods from several merchants in one order and perform certain social media like actions (following designers, liking products etc.) that are also used to improve personalization. To avoid legal issues arising from distributing money to the merchants, Stripe Connect was used. We are currently in the process of further enhancing the functionality through e.g. automatic generation of shipping labels via integration of a shipping provider."
           tasks="From requirements engineering over software architecture to implementation"
-          technologies="MongoDB, Kotlin, Spring Boot Webflux, React, MaterialUI, Stripe Connect, Firebase Auth"
+          technologies="MongoDB, Kotlin, Spring Boot Webflux, React, MaterialUI, Stripe Connect (with custom accounts), Firebase Auth"
         />
         <Project
           title="Lorem Ipsum"
@@ -101,8 +101,8 @@ export default () => (
           technologies="MSSQL, Sequelize, Express, React, SemanticUI, Lerna, Jest, Docker, Docker Compose"
         />
         <Project
-          title="This website"
-          description="For this website Gatsby was chosen for it's well-thought-out design. This provides us with code splitting, link prefetching and many more aspects leading to a highly performant site."
+          title="nbenker.io"
+          description="For this website Gatsby was chosen for it's well-thought-out design. This provides us with code splitting, link prefetching and many more advantageous aspects leading to a highly performant site."
           tasks="UI Design, Development, SEO optimization"
           technologies="React, Gatsby, styled-components, Typography.js, Netlify CD"
         />

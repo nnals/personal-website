@@ -24,6 +24,8 @@ const colors = {
   bodyColorPale: chroma.hsl(primaryHue, 0, 0.6),
   inputBorderColor: chroma.hsl(primaryHue, 0.2, 0.9),
   inputBorderColorHover: chroma.hsl(primaryHue, 0.2, 0.75),
+  linkColor: chroma.hsl(primaryHue, 0.4, 0.5),
+  linkColorHover: chroma.hsl(primaryHue, 0.5, 0.4),
 }
 
 export { getPrimaryColor, getSecondaryColor }

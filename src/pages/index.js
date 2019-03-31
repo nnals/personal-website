@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
+import Link from '../components/link'
 
 const SupStar = () => <sup css="vertical-align: sub;">*</sup>
 
