@@ -95,10 +95,10 @@ export default () => (
           technologies="MongoDB, Kotlin, Spring Boot Webflux, React, MaterialUI, Stripe Connect (with custom accounts), Firebase Auth"
         />
         <Project
-          title="Lorem Ipsum"
-          description="Blabla for Helfende Hände ... automation of tedious business processes ..."
-          tasks="Optimization of business processes, ..."
-          technologies="MSSQL, Sequelize, Express, React, SemanticUI, Lerna, Jest, Docker, Docker Compose"
+          title="Infotainment System"
+          description="For a nursing home in vienna an infotainment system was developed automating many previously manual tasks and thus drastically reducing the time employees had to spend to offer this service to the clients. The system consists of a (REST) backend application and two frontends. Employees create and schedule multimedia content in the backoffice that is later shown by the second frontend which is mirrored to all displays in the nursing home. The functionality includes creation of PowerPoint-like slideshows facilitated by adaptable templates and integration of internal and external APIs (Wikipedia and Wunderground) for automatic content generation, streaming and transcoding of movies, creation of photo slideshows, integration of online radio stations and so forth."
+          tasks="Requirements engineering, Specification, UI/UX Design, Software Architecture, Development, Unit and Integration Testing, Deployment"
+          technologies="MSSQL, Sequelize, FFMPEG, Express, React, SemanticUI, Lerna, Jest, Docker, Docker Compose"
         />
         <Project
           title="nbenker.io"
