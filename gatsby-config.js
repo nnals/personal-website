@@ -22,12 +22,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-98653590-2',
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-98653590-2',
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
