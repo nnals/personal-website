@@ -1,4 +1,6 @@
 import Typography from 'typography'
+import 'typeface-roboto-slab'
+import 'typeface-source-sans-pro'
 import c from './color'
 
 /*
@@ -26,10 +28,10 @@ const scalingDenominators = [
 const scalingFactor = 10 // original is 5 (see above)
 
 const typography = new Typography({
-  googleFonts: [
-    { name: 'Roboto Slab', styles: ['700'] },
-    { name: 'Source Sans Pro', styles: ['700, 400'] },
-  ],
+  // googleFonts: [
+  //   { name: 'Roboto Slab', styles: ['700'] },
+  //   { name: 'Source Sans Pro', styles: ['700, 400'] },
+  // ],
   headerFontFamily: ['Roboto Slab', 'serif'],
   bodyFontFamily: ['Source Sans Pro', 'sans-serif'],
   baseFontSize: '19px',

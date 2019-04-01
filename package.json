@@ -31,6 +31,8 @@
     "react-icons": "^3.5.0",
     "react-typography": "^0.16.19",
     "styled-components": "^4.2.0",
+    "typeface-roboto-slab": "0.0.72",
+    "typeface-source-sans-pro": "0.0.54",
     "typography": "^0.16.19"
   },
   "devDependencies": {
