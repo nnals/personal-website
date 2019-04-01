@@ -58,13 +58,10 @@ export default () => (
       <form
         name="contact"
         method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        action="/thanks"
+        action="https://formspree.io/contact@nbenker.io"
       >
-        <input type="hidden" name="form-name" value="contact" />
         <label css="display: none;">
-          Don’t fill this out if you‘re human: <input name="bot-field" />
+          Don’t fill this out if you‘re human: <input name="_gotcha" />
         </label>
         <label>
           Name
@@ -72,7 +69,7 @@ export default () => (
         </label>
         <label>
           Email
-          <Input type="email" name="email" required />
+          <Input type="email" name="_replyto" required />
         </label>
         <label>
           What can I do for you?
