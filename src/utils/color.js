@@ -9,11 +9,25 @@ const getColor = hue => (lightness, saturation, alpha) =>
 const getPrimaryColor = getColor(primaryHue)
 const getSecondaryColor = getColor(secondaryHue)
 
+const gradientColors = ['#6144eb', '#24e7f6']
+const linearGradient = (gradientAlpha = 1, darken) => `linear-gradient(
+  230deg,
+  ${gradientColors
+    .map(x =>
+      darken
+        ? chroma(x)
+            .alpha(gradientAlpha)
+            .darken(darken)
+        : chroma(x).alpha(gradientAlpha)
+    )
+    .join(', ')}
+);`
+
 const colors = {
+  linearGradient,
   backgroundColor: chroma.hsl(primaryHue, 0.5, 0.99),
   logoColor: chroma.hsl(primaryHue, 0.1, 0.5),
   logoColorHover: chroma.hsl(primaryHue, 0.1, 0.2),
-  titleGradientColors: ['#6144eb', '#24e7f6'],
   subtitleColor: chroma.hsl(primaryHue, 0.1, 0.8),
   navItemColor: chroma.hsl(primaryHue, 0.1, 0.5),
   navItemColorHover: chroma.hsl(primaryHue, 0.3, 0.5),
@@ -26,6 +40,10 @@ const colors = {
   inputBorderColorHover: chroma.hsl(primaryHue, 0.2, 0.75),
   linkColor: chroma.hsl(primaryHue, 0.4, 0.5),
   linkColorHover: chroma.hsl(primaryHue, 0.5, 0.4),
+  hamburgerColor: chroma.hsl(primaryHue, 0.1, 0.5),
+  mobileNavItemColor: chroma.hsl(primaryHue, 0.5, 0.99),
+  mobileNavItemColorHover: chroma.hsl(primaryHue, 0.7, 0.9),
+  mobileNavItemColorActive: chroma.hsl(primaryHue, 0.7, 0.9),
 }
 
 export { getPrimaryColor, getSecondaryColor }

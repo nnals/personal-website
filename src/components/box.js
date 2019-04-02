@@ -1,14 +1,8 @@
 import styled, { keyframes, css } from 'styled-components'
-import chroma from 'chroma-js'
 import c from '../utils/color'
 
 const boxShadow = alpha => `0px 5px 42px -10px hsla(0,0%,0%,${alpha})`
 
-const linearGradient = gradientAlpha => `linear-gradient(
-  230deg,
-  ${c.titleGradientColors.map(x => chroma(x).alpha(gradientAlpha)).join(', ')}
-);
-`
 const changeColor = keyframes`
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
@@ -20,7 +14,7 @@ const Box = styled.div`
   box-shadow: ${({ elevation = 0 }) => boxShadow(elevation)};
   border-radius: ${({ variant = 'square' }) =>
     variant === 'round' ? `5px` : `2px`};
-  background: ${({ gradientAlpha = 0 }) => linearGradient(gradientAlpha)};
+  background: ${({ gradientAlpha = 0 }) => c.linearGradient(gradientAlpha)};
   transition: all 400ms ease-out;
   ${({ animated }) =>
     animated &&
@@ -34,7 +28,7 @@ const HoverBox = styled(Box)`
   &:hover,
   &:focus {
     background: ${({ gradientAlpha = 0, gradientAlphaHover = gradientAlpha }) =>
-      linearGradient(gradientAlphaHover)};
+      c.linearGradient(gradientAlphaHover)};
     box-shadow: ${({ elevation = 0, elevationHover = elevation }) =>
       boxShadow(elevationHover)};
     outline: currentcolor none 0px;

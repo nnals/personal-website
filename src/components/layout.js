@@ -24,7 +24,25 @@ const Main = styled.main`
 const Layout = ({ children }) => (
   <div>
     <GlobalStyle />
-    <Nav />
+    <div
+      css={`
+        margin-top: -0.7em;
+        @media (min-width: 601px) {
+          display: none;
+        }
+      `}
+    >
+      <Nav variant="mobile" />
+    </div>
+    <div
+      css={`
+        @media (max-width: 600px) {
+          display: none;
+        }
+      `}
+    >
+      <Nav variant="desktop" />
+    </div>
     <Main>{children}</Main>
   </div>
 )

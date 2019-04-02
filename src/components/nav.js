@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import c from '../utils/color'
 import typography from '../utils/typography'
 import Box from './box'
+import MobileNav from './mobile-nav'
+import DesktopNav from './desktop-nav'
 
 const LogoBox = styled(Box)`
   font-size: 0.8em;
@@ -15,7 +17,7 @@ const LogoBox = styled(Box)`
   }
 `
 
-const Logo = ({ variant }) => (
+const Logo = () => (
   <Link
     to="/"
     css={`
@@ -28,57 +30,9 @@ const Logo = ({ variant }) => (
         margin: 0;
       `}
     >
-      {/* <div
-        css={`
-          padding: 0 0.17em;
-          @media (min-width: 501px) {
-            display: none;
-          }
-        `}
-      >
-        N
-      </div>
-      <div
-        css={`
-          @media (max-width: 500px) {
-            display: none;
-          }
-        `}
-      > */}
       Nicolai Benker
-      {/* </div> */}
     </LogoBox>
   </Link>
-)
-
-const underlineCSS = color => `{
-  content: '';
-  height: 2px;
-  background: ${color};
-  display: block;
-  margin-top: -1px;
-}`
-
-const NavItem = props => (
-  <Link
-    css={`
-      margin: 0 0 0 16px;
-      font-size: 0.85em;
-      font-weight: 600;
-      text-decoration: none;
-      color: ${c.navItemColor};
-      transition: all 200ms ease;
-      &:hover{
-        color: ${c.navItemColorHover};
-      }
-      &::after ${underlineCSS(c.backgroundColor)}
-      &:hover::after ${underlineCSS(c.navItemColorHover)}
-    `}
-    activeStyle={{
-      color: c.navItemColorActive,
-    }}
-    {...props}
-  />
 )
 
 const NavCointainer = styled.nav`
@@ -90,20 +44,21 @@ const NavCointainer = styled.nav`
   max-width: 1440px;
 `
 
-const Nav = () => (
-  <NavCointainer>
-    <Logo />
-    <div
-      css={`
-        display: flex;
-      `}
-    >
-      <NavItem to="/work">WORK</NavItem>
-      <NavItem to="/skills">SKILLS</NavItem>
-      <NavItem to="/contact">CONTACT</NavItem>
-      <NavItem to="/legal-notice">LEGAL NOTICE</NavItem>
-    </div>
-  </NavCointainer>
-)
+const Nav = ({ variant = 'desktop' }) => {
+  if (variant === 'mobile') {
+    return (
+      <NavCointainer>
+        <Logo />
+        <MobileNav />
+      </NavCointainer>
+    )
+  }
+  return (
+    <NavCointainer>
+      <Logo />
+      <DesktopNav />
+    </NavCointainer>
+  )
+}
 
 export default Nav
