@@ -58,7 +58,7 @@ export default () => (
       <form
         name="contact"
         method="POST"
-        action="https://formspree.io/contact@nbenker.io"
+        action="https://formspree.io/nbenker.ochwzg@zapiermail.com"
       >
         <label css="display: none;">
           Don’t fill this out if you‘re human: <input name="_gotcha" />
