@@ -19,6 +19,8 @@ const MobileNav = () => {
         onClick={toggle}
         aria-label={`${isToggledOn ? 'close menu' : 'open menu'}`}
         css={`
+          height: 22px;
+          width: 22px;
           z-index: 30;
           top: -5px;
           position: relative;
