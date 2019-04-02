@@ -33,7 +33,7 @@ Layout.Header = ({ title, subtitle }) => (
   <div
     css={`
       flex: 2;
-      min-width: 250px;
+      min-width: 280px;
       @media (min-width: ${empiricallyProvenBestBreakpoint}px) {
         margin-right: 2em;
         min-width: ${empiricallyProvenBestBreakpoint}px;
@@ -49,7 +49,7 @@ Layout.Header = ({ title, subtitle }) => (
 
 Layout.Content = styled.div`
   flex: 4;
-  min-width: 250px;
+  min-width: 280px;
   @media (min-width: ${empiricallyProvenBestBreakpoint}px) {
     min-width: ${empiricallyProvenBestBreakpoint}px;
   }
