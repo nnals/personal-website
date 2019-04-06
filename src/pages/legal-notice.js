@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
+import Link from '../components/link'
 
 export default () => (
   <Layout>
@@ -16,7 +17,7 @@ export default () => (
         <br />
         Austria
         <br />
-        Email: contact@nbenker.io
+        Email: <Link to="mailto:contact@nbenker.io">contact@nbenker.io</Link>
       </p>
       <p>
         VAT-ID: ATU73018539
@@ -98,8 +99,8 @@ export default () => (
       </p>
       <p>
         Review{' '}
-        <a href="https://www.netlify.com/gdpr/">Netlify‘s privacy policy</a> for
-        further information
+        <Link to="https://www.netlify.com/gdpr/">Netlify‘s privacy policy</Link>{' '}
+        for further information
       </p>
 
       <h3>Contact Form</h3>
@@ -112,9 +113,9 @@ export default () => (
       </p>
       <p>
         Review{' '}
-        <a href="https://sendgrid.com/policies/privacy">
+        <Link to="https://sendgrid.com/policies/privacy">
           Sendgrid‘s privacy policy
-        </a>{' '}
+        </Link>{' '}
         for further information
       </p>
 
@@ -137,9 +138,9 @@ export default () => (
 
       <p>
         This Privacy Policy was generated with the help of{' '}
-        <a href="https://gdprprivacypolicy.net/">
+        <Link to="https://gdprprivacypolicy.net/">
           GDPR Privacy Policy Generator
-        </a>{' '}
+        </Link>{' '}
         and adapted appropriately.
       </p>
     </Layout.Content>
