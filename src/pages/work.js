@@ -107,7 +107,7 @@ export default () => (
         <Project
           title="nbenker.io"
           description="For this website Gatsby was chosen for it's well-thought-out design. This provides us with code splitting, link prefetching and many more advantageous aspects leading to a highly performant site."
-          tasks="UI Design, Development, SEO optimization"
+          tasks="UI Design, Development"
           technologies="React, Gatsby, styled-components, Typography.js, Netlify CD"
         />
       </JobSection>
