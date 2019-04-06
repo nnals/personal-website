@@ -39,6 +39,10 @@ const SEO = ({ title, description, pathname }) => {
         titleTemplate={titleTemplate}
         htmlAttributes={{ lang: 'en' }}
       >
+        <meta
+          name="google-site-verification"
+          content="mpUnAC2izT1oOhEgncaiApFd2rvblXXf6egwbvyOQj4"
+        />
         <meta name="description" content={seo.description} />
         {seo.url && <meta property="og:url" content={seo.url} />}
         {seo.title && <meta property="og:title" content={seo.title} />}
