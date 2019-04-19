@@ -15,7 +15,8 @@ const GlobalStyle = createGlobalStyle`
 const Main = styled.main`
   margin: 0px auto;
   max-width: 1440px;
-  padding: 8vh 5vw 6vh 5vw;
+  width: 90vw;
+  padding: 8vh 0px 6vh 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

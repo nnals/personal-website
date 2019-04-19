@@ -35,13 +35,15 @@ const Logo = () => (
   </Link>
 )
 
+// TODO move some of these styles to layout to colocate with similar Main styles
 const NavCointainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 5vh 0 5vh 0;
   margin: 0px auto;
   max-width: 1440px;
+  width: 90vw;
 `
 
 const Nav = ({ variant = 'desktop' }) => {

@@ -20,7 +20,7 @@ const Box = styled.div`
     animated &&
     css`
       background-size: 400% 400%;
-      animation: ${changeColor} 20s ease infinite;
+      animation: ${changeColor} 20s linear infinite;
     `}
 `
 
