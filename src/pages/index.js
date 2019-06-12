@@ -20,10 +20,9 @@ export default () => (
           <Link to="/work">see for yourself</Link>.
         </p>
         <p>
-          I‘m available for freelance work –
-          <br />
-          And I‘d love to hear about your project, so please{' '}
-          <Link to="/contact">get in touch</Link>.
+          I‘m available for freelance work and would love to hear about your
+          project, so please don‘t hesitate to{' '}
+          <Link to="/contact">get in touch</Link> with me.
         </p>
       </div>
       <p css="font-size: .8em">

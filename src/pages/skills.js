@@ -51,7 +51,7 @@ export default () => (
         <SkillSection
           title="Languages"
           skills={[
-            'JavaScript',
+            'JavaScript/TypeScript',
             'Java',
             'Kotlin',
             'C#',
@@ -60,6 +60,7 @@ export default () => (
             'PHP',
             'C',
             'OpenAPI/Swagger',
+            'GraphQL',
           ]}
         />
         <SkillSection
