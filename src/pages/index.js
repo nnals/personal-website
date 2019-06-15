@@ -9,7 +9,7 @@ const SupStar = () => <sup css="vertical-align: sub;">*</sup>
 export default () => (
   <Layout>
     <SEO pathname="/" title="Home" />
-    <Layout.Header title="Nicolai Benker" subtitle="Software engineer" />
+    <Layout.Header title="Nicolai Benker" />
     <Layout.Content>
       <div css="font-size: 1.2em">
         <p>
