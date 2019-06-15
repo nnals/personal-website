@@ -50,14 +50,13 @@ const ProjectSubtitle = styled.h4`
   margin-bottom: 0.5em;
   font-size: 0.9em;
   display: flex;
-  align-items: end;
+  align-items: center;
 `
 
 const iconCSS = `
   margin-right: .45em;
   color: ${c.iconColor}
   font-size: 1.2em;
-  margin-top: -.15em
 `
 
 const ProjectParagraph = styled.p`
