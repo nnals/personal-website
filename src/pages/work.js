@@ -32,7 +32,7 @@ const JobSection = ({ title, period, intro, children }) => (
 )
 
 const ProjectBox = styled(Box).attrs({
-  elevation: 0.25,
+  elevation: 0.15,
   variant: 'round',
   gradientAlpha: 0.015,
 })`
