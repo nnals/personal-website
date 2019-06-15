@@ -1,47 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
 import Layout from '../components/layout'
-import c from '../utils/color'
-import { HoverBox } from '../components/box'
+import Button from '../components/button'
+import Input from '../components/input'
+import TextArea from '../components/text-area'
 import SEO from '../components/SEO'
-
-const Input = styled.input`
-  &:focus {
-    border-bottom: 1px solid ${c.inputBorderColorHover};
-  }
-  margin: 0 0 1em;
-  border-style: none none solid none;
-  border-bottom-color: ${c.inputBorderColor};
-  border-bottom-width: 1px;
-  padding: 0.5rem 0;
-  background: transparent none repeat scroll 0% 0%;
-  outline: currentcolor none 0;
-  width: 100%;
-  transition: all 200ms ease 0s;
-  &:invalid {
-    box-shadow: none;
-  }
-`
-
-const TextArea = styled(Input).attrs({ as: 'textarea' })`
-  min-height: 160px;
-`
-
-const Button = styled(HoverBox).attrs({
-  variant: 'square',
-  gradientAlpha: 0.8,
-  gradientAlphaHover: 1,
-  elevation: 0.25,
-  elevationHover: 0.6,
-})`
-  color: ${c.backgroundColor};
-  font-weight: bold;
-  padding: 0.4em;
-  width: 150px;
-  letter-spacing: 0.14em;
-  border: none;
-  margin-top: 0.4em;
-`
 
 export default () => (
   <Layout>
