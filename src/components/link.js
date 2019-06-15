@@ -11,8 +11,8 @@ const linkCSS = `
 `
 
 const Link = ({ children, to, activeStyle, ...rest }) => {
-  // This example assumes that any internal link (intended for Gatsby)
-  // will start with exactly one slash, and that anything else is external.
+  // assumes that any internal link (intended for Gatsby)
+  // will start with exactly one slash, and that anything else is external
   const mail = /^mailto:/.test(to)
   const internal = /^\/(?!\/)/.test(to)
 

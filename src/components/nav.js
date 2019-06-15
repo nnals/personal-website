@@ -11,7 +11,6 @@ const LogoBox = styled(Box)`
   font-size: 0.8em;
   font-family: ${typography.options.headerFontFamily.join(', ')};
   background-color: ${c.logoColor};
-  transition: all 400ms ease-out;
   &:hover {
     background-color: ${c.logoColorHover};
   }
