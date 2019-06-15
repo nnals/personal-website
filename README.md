@@ -1,4 +1,4 @@
-Source code for my personal website [nbenker.io](nbenker.io). It's a static site built with Gatsby and hosted on Netlify.
+Source code for my personal website [nbenker.io](https://nbenker.io). It's a static site built with Gatsby and hosted on Netlify.
 
 ## Stack
 
