@@ -16,7 +16,7 @@ export default () => (
           Hello, I‘m a software engineer based in Vienna, Austria.
           <SupStar />
           <br />
-          Lately I have been mostly focusing on full stack web development but{' '}
+          Lately I have been mostly focusing on full stack web and mobile development using React, React Native and Node.js but{' '}
           <Link to="/work">see for yourself</Link>.
         </p>
         <p>
