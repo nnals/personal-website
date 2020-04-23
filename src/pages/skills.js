@@ -52,24 +52,24 @@ export default () => (
           title="Languages"
           skills={[
             'JavaScript/TypeScript',
+            'GraphQL',
+            'DB: SQL, MongoDB',
             'Java',
             'Kotlin',
             'C#',
-            'DB: SQL, MongoDB',
             'Python',
             'PHP',
             'C',
             'OpenAPI/Swagger',
-            'GraphQL',
           ]}
         />
         <SkillSection
           title="Frameworks"
           skills={[
-            'JS: React, React Native/Expo, Angular/AngularJS',
+            'JS: React, React Native/Expo, Gatsby, Angular/AngularJS',
             'Node.js: Express',
+            'CSS/UI: Styled System, Ant Design, SemanticUI, Material, Bootstrap',
             'Java: Spring (WebFlux), JavaFX',
-            'CSS: SemanticUI, Material, Bootstrap',
             'C#: Nancy, NServiceKit, ORMLite',
             'Python: Django',
           ]}
@@ -81,10 +81,10 @@ export default () => (
             'Lerna',
             'Docker/Docker Compose',
             'Git',
+            'MongoDB Stitch',
             'Stripe (Connect)',
-            'Gatsby',
             'AWS',
-            'Now',
+            'Now v2',
             'Firebase Auth',
           ]}
         />

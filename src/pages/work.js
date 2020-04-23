@@ -92,6 +92,12 @@ export default () => (
 
       <JobSection title="Freelancing" period="2017 – today">
         <Project
+          title="Real Estate Platform"
+          description="We are currently in the process of developing a platform that aims to help individuals make more informed decisions regarding their real estate investments. In order to achieve this we combine real estate offers from the most popular sites with rental price estimations and statistical data such as population prognoses."
+          tasks="Software Architecture, Development, Testing"
+          technologies="MongoDB Stitch (serverless platform for auth, data base access), Now v2 (for serverless functions and frontend hosting), React, Ant Design, Styled System (for constraint-based design), Styled Components, Storybook, Jest, Husky/Commitizen (for linting of commits)"
+        />
+        <Project
           title="Fashion Marketplace"
           description="For a startup in its early phase we developed a marketplace connecting customers and fashion designers. Among many other things it allows designers to easily manage their offered products, their received orders, gain insights into sales statistics and being paid out automatically on a regular basis. Customers are able to purchase goods from several merchants in one order and perform certain social media like actions (following designers, liking products etc.) that are also used to improve personalization. To avoid legal issues arising from distributing money to the merchants, Stripe Connect was used. We are currently in the process of further enhancing the functionality through e.g. automatic generation of shipping labels via integration of a shipping provider."
           tasks="From requirements engineering over software architecture to implementation"
