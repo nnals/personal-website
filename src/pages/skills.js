@@ -54,12 +54,12 @@ export default () => (
             'JavaScript/TypeScript',
             'GraphQL',
             'DB: SQL, MongoDB',
+            'HTML, CSS',
             'Java',
             'Kotlin',
             'C#',
             'Python',
             'PHP',
-            'C',
             'OpenAPI/Swagger',
           ]}
         />
@@ -78,12 +78,13 @@ export default () => (
           title="Platforms / Tools"
           skills={[
             'Node.js/NPM/Yarn',
-            'Lerna',
+            'Jest, Cypress',
+            'Github Actions, Gitlab CI',
             'Docker/Docker Compose',
-            'Git',
+            'Git, GitHub, GitLab, Bitbucket',
             'MongoDB Stitch',
             'Stripe (Connect)',
-            'AWS',
+            'AWS Amplify, S3, Cloudfront, EC2',
             'Now v2',
             'Firebase Auth',
           ]}

@@ -95,17 +95,17 @@ export default () => (
           title="Real Estate Platform"
           description="We are currently in the process of developing a platform that aims to help individuals make more informed decisions regarding their real estate investments. In order to achieve this we combine real estate offers from the most popular sites with rental price estimations and statistical data such as population prognoses."
           tasks="Software Architecture, Development, Testing"
-          technologies="MongoDB Stitch (serverless platform for auth, data base access), Now v2 (for serverless functions and frontend hosting), React, Ant Design, Styled System (for constraint-based design), Styled Components, Storybook, Jest, Husky/Commitizen (for linting of commits)"
+          technologies="MongoDB Atlas, MongoDB Stitch (serverless platform for auth, data base access), Now v2 (for serverless functions and frontend hosting), React, Ant Design, Styled System (for constraint-based design), Styled Components, Storybook, Jest, Husky/Commitizen (for linting of commits)"
         />
         <Project
           title="Fashion Marketplace"
-          description="For a startup in its early phase we developed a marketplace connecting customers and fashion designers. Among many other things it allows designers to easily manage their offered products, their received orders, gain insights into sales statistics and being paid out automatically on a regular basis. Customers are able to purchase goods from several merchants in one order and perform certain social media like actions (following designers, liking products etc.) that are also used to improve personalization. To avoid legal issues arising from distributing money to the merchants, Stripe Connect was used. We are currently in the process of further enhancing the functionality through e.g. automatic generation of shipping labels via integration of a shipping provider."
+          description="For a startup in its early phase a MVP of a marketplace connecting customers and fashion designers was developed. Among other things it allows designers to easily manage their offered products, their received orders, gain insights into sales statistics and being paid out automatically on a regular basis. Customers are able to purchase goods from several merchants in one order and perform certain social media like actions (following designers, liking products etc.) that are also used to improve personalization. To avoid legal issues arising from distributing money to the merchants, Stripe Connect was used. We are currently in the process of further enhancing the functionality through e.g. automatic generation of shipping labels via integration of a shipping provider."
           tasks="From requirements engineering over software architecture to implementation"
           technologies="MongoDB, Kotlin, Spring Boot Webflux, React, MaterialUI, Stripe Connect (with custom accounts), Firebase Auth"
         />
         <Project
           title="Infotainment System"
-          description="For a nursing home in vienna an infotainment system was developed automating many previously manual tasks and thus drastically reducing the time employees had to spend to offer this service to the clients. The system consists of a (REST) backend application and two frontends. Employees create and schedule multimedia content in the backoffice that is later shown by the second frontend which is mirrored to all displays in the nursing home. The functionality includes creation of PowerPoint-like slideshows facilitated by adaptable templates and integration of internal and external APIs (Wikipedia and Wunderground) for automatic content generation, streaming and transcoding of movies, creation of photo slideshows, integration of online radio stations and so forth."
+          description="For a nursing home in Vienna an infotainment system was developed automating many previously manual tasks and thus drastically reducing the time employees had to spend to offer this service to the clients. The system consists of a (REST) backend application and two frontends. Employees create and schedule multimedia content in the backoffice that is later shown by the second frontend which is mirrored to all displays in the nursing home. The functionality includes creation of PowerPoint-like slideshows facilitated by adaptable templates and integration of internal and external APIs (Wikipedia and Wunderground) for automatic content generation, streaming and transcoding of movies, creation of photo slideshows, integration of online radio stations and so forth."
           tasks="Requirements engineering, Specification, UI/UX Design, Software Architecture, Development, Unit and Integration Testing, Deployment"
           technologies="MSSQL, Sequelize, FFMPEG, Node.js, Express, React, SemanticUI, Lerna, Jest, Docker, Docker Compose"
         />
@@ -113,17 +113,36 @@ export default () => (
           title="nbenker.io"
           description="For this website Gatsby was chosen for it's well-thought-out design. This provides us with code splitting, link prefetching and many more advantageous aspects leading to a highly performant site."
           tasks="UI Design, Development"
-          technologies="React, Gatsby, styled-components, Typography.js, Netlify CD"
+          technologies="React, Gatsby, Styled Components, Typography.js, Netlify CD"
+        />
+      </JobSection>
+
+      <JobSection
+        title="9Y Media Group GmbH"
+        period="2019 - 2020"
+        intro="Software Development Agency in Vienna, Austria"
+      >
+        <Project
+          title="Real-Estate Tour App"
+          description="A mobile app allowing potential tenants to view apartments without requiring interaction with a real estate agent. During the actual appointment the app guides through the viewing."
+          tasks="Mobile development, code reviews"
+          technologies="React Native, Styled Components, Styled System, Apollo Client, AWS Amplify, AWS S3"
+        />
+        <Project
+          title="KayX"
+          description="Highly interactive social network app that encourages open- and like-minded people to get to know each other."
+          tasks="Pixel-perfect implementation of mobile UI components and interactions, code reviews"
+          technologies="React Native, Styled Components"
         />
       </JobSection>
 
       <JobSection
         title="iXTS GmbH"
-        period="2014 – 2017"
-        intro="An IT consulting agency in Munich, Germany"
+        period="2013 – 2016"
+        intro="IT consulting agency in Munich, Germany"
       >
         <Project
-          title="Editorial management software"
+          title="Editorial Management Software"
           description="An editorial management software for radio stations of the Westfunk
   GmbH. The software helps editors to create and share news and media
   content, plan the daily news and distribute them. Further it is used for
@@ -142,8 +161,8 @@ export default () => (
 
       <JobSection
         title="Sistecs Media Agentur"
-        period="2013 – 2019"
-        intro="A full service agency in Erding, Germany"
+        period="2013 - today"
+        intro="Full service agency in Erding, Germany"
       >
         <Project
           title="Artist management app"
